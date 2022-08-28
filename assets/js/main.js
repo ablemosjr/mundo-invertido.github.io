@@ -16,5 +16,11 @@ btnSubscribe.addEventListener('click', async () => {
   }
 
   const subscriptionId = await subscribeToHellfireClub(subscription);
-  console.log(`Inscrito com sucesso: ${subscriptionId}`);
+
+  txtName.value = '';
+  txtEmail.value = '';
+  txtLevel.value = '';
+  txtCharacter.value = '';
+
+  alert('Enviado com sucesso. Id: ' + subscriptionId);
 });
